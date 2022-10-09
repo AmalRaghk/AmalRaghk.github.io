@@ -47,7 +47,7 @@ body {
 }
 
 a {
-  color: #3c1b38;
+  color: #FF9000;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #3c1b38;
+  background: #FF9000;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #3c1b38;
+  background: #FF9000;
 }
 
 ::selection {
   color: #fff;
-  background: #3c1b38;
+  background: #FF9000;
 }
 
 #fh5co-header,
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #3c1b38;
+  background: #FF9000;
 }
 #fh5co-features h2 {
   color: #fff;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #3c1b38 !important;
+  color: #FF9000 !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #3c1b38;
+  color: #FF9000;
   padding-left: 10px;
   padding-right: 10px;
 }
