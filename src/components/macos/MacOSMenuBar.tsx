@@ -1,6 +1,6 @@
 import React from 'react';
 import { Apple, Wifi, Volume2, Battery } from 'lucide-react';
-
+import logo from '../../../public/logo.svg';
 interface MacOSMenuBarProps {
   time: Date;
 }
@@ -16,9 +16,9 @@ const MacOSMenuBar: React.FC<MacOSMenuBarProps> = ({ time }) => {
 
   return (
     <div className="absolute top-0 left-0 right-0 h-6 bg-gray-200 border-b border-gray-300 flex items-center justify-between px-4 text-black text-sm z-50">
-      <div className="flex items-center space-x-4">
-        <Apple className="w-4 h-4" />
-        <span className="font-medium">Finder</span>
+       <div className="flex items-center space-x-2">        
+        <img src={logo} alt="logo" className="w-4 h-4" />
+        <span className="font-medium">Welcome</span>
       </div>
       
       <div className="flex items-center space-x-3">

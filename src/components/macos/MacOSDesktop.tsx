@@ -1,5 +1,5 @@
 import React from 'react';
-import { Folder, FileText, HardDrive } from 'lucide-react';
+import {  FileText } from 'lucide-react';
 
 const MacOSDesktop: React.FC = () => {
   const desktopItems = [

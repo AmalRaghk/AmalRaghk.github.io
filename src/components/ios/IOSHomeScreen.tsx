@@ -1,16 +1,16 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppContext';
-import { Mail, Briefcase, Instagram, Camera,Music, Calculator, FolderGit } from 'lucide-react';
+import { Mail, Briefcase, CircleUser, Camera,Music, Calculator, FolderGit } from 'lucide-react';
 
 const IOSHomeScreen: React.FC = () => {
   const { setCurrentApp } = useApp();
 
   const apps = [
-    { name: 'Mail', icon: Mail, color: 'bg-blue-500', id: 'contact' },
+    { name: 'Cotact Me', icon: Mail, color: 'bg-blue-500', id: 'contact' },
     { name: 'Music', icon: Music, color: 'bg-red-500', id: 'music' },
     { name: 'Projects', icon: FolderGit, color: 'bg-gray-800', id: 'project' },
     { name: 'Experiences', icon: Briefcase, color: 'bg-blue-700', id: 'experience' },
-    { name: 'About', icon: Instagram, color: 'bg-pink-500', id: 'about' },
+    { name: 'About', icon: CircleUser, color: 'bg-pink-500', id: 'about' },
     { name: 'Camera', icon: Camera, color: 'bg-gray-600', id: 'camera' },
     { name: 'Calculator', icon: Calculator, color: 'bg-gray-800', id: 'calculator' },
   ];
@@ -52,12 +52,6 @@ const IOSHomeScreen: React.FC = () => {
         ))}
       </div>
 
-      {/* Page Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-        <div className="w-2 h-2 bg-white rounded-full"></div>
-        <div className="w-2 h-2 bg-white rounded-full opacity-50"></div>
-        <div className="w-2 h-2 bg-white rounded-full opacity-50"></div>
-      </div>
     </div>
   );
 };

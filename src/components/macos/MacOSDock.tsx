@@ -6,7 +6,7 @@ const MacOSDock: React.FC = () => {
   const { setCurrentApp } = useApp();
 
   const apps = [
-    { name: 'Mail', icon: Mail, id: 'contact', color: 'bg-blue-600' },
+    { name: 'Cotact Me', icon: Mail, id: 'contact', color: 'bg-blue-600' },
     { name: 'Projects', icon: FolderGit, id: 'project', color: 'bg-gray-800' },
     { name: 'Experiences', icon: Briefcase, id: 'experience', color: 'bg-blue-700' },
     { name: 'About', icon: CircleUser, id: 'about', color: 'bg-pink-500' },

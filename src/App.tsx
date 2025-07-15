@@ -23,7 +23,7 @@ function App() {
         <div className="text-center">
           <div className="w-12 h-12 mx-auto mb-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
           <p className="text-white text-sm font-light">
-            {isMobile ? 'Starting iOS...' : 'Starting macOS...'}
+            {isMobile ? 'Starting...' : 'Starting...'}
           </p>
         </div>
       </div>
