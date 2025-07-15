@@ -52,7 +52,7 @@ const formatRelativeTime = (dateString: string): string => {
   return `Updated ${Math.floor(seconds)} seconds ago`;
 };
 
-const GitHubApp: React.FC = () => {
+const ProjectsApp: React.FC = () => {
   const { setCurrentApp } = useApp();
   const [repositories, setRepositories] = useState<Repo[]>([]);
   const [selectedRepo, setSelectedRepo] = useState<Repo | null>(null);
@@ -149,7 +149,7 @@ const GitHubApp: React.FC = () => {
       <div className="bg-gray-900 text-white p-3 flex items-center justify-between border-b">
         <div className="flex items-center space-x-3">
           <button onClick={handleBack}><ArrowLeft className="w-5 h-5" /></button>
-          <h1 className="text-lg font-medium">AmalRaghk's GitHub</h1>
+          <h1 className="text-lg font-medium">My Projects</h1>
         </div>
         <Search className="w-5 h-5" />
       </div>
@@ -212,4 +212,4 @@ const GitHubApp: React.FC = () => {
   );
 };
 
-export default GitHubApp;
+export default ProjectsApp;

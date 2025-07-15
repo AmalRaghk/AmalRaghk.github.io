@@ -19,12 +19,6 @@ const MacOSMenuBar: React.FC<MacOSMenuBarProps> = ({ time }) => {
       <div className="flex items-center space-x-4">
         <Apple className="w-4 h-4" />
         <span className="font-medium">Finder</span>
-        <span>File</span>
-        <span>Edit</span>
-        <span>View</span>
-        <span>Go</span>
-        <span>Window</span>
-        <span>Help</span>
       </div>
       
       <div className="flex items-center space-x-3">

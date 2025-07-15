@@ -3,10 +3,8 @@ import { Folder, FileText, HardDrive } from 'lucide-react';
 
 const MacOSDesktop: React.FC = () => {
   const desktopItems = [
-    { name: 'Macintosh HD', icon: HardDrive, x: 20, y: 40 },
-    { name: 'Documents', icon: Folder, x: 20, y: 120 },
-    { name: 'Downloads', icon: Folder, x: 20, y: 200 },
-    { name: 'ReadMe.txt', icon: FileText, x: 20, y: 280 },
+
+    { name: 'ReadMe.txt', icon: FileText, x: 20, y: 40 },
   ];
 
   return (

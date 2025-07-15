@@ -1,10 +1,10 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
-import GmailApp from './GmailApp';
-import GitHubApp from './GitHubApp';
-import LinkedInApp from './LinkedInApp';
-import InstagramApp from './InstagramApp';
+import ProjectsApp from './ProjectsApp';
+import ExperienceApp from './ExperienceApp';
+import ContactApp from './ContactApp';
+import AboutApp from './AboutApp';
 
 const AppContainer: React.FC = () => {
   const { currentApp } = useApp();
@@ -12,14 +12,14 @@ const AppContainer: React.FC = () => {
 
   const renderApp = () => {
     switch (currentApp) {
-      case 'gmail':
-        return <GmailApp />;
-      case 'github':
-        return <GitHubApp />;
-      case 'linkedin':
-        return <LinkedInApp />;
-      case 'instagram':
-        return <InstagramApp />;
+      case 'contact':
+        return <ContactApp />;
+      case 'project':
+        return <ProjectsApp />;
+      case 'experience':
+        return <ExperienceApp />;
+      case 'about':
+        return <AboutApp />;
       default:
         return (
           <div className="flex items-center justify-center h-full text-gray-500 bg-white">

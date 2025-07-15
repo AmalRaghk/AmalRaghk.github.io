@@ -3,7 +3,7 @@ import { useApp } from '../../contexts/AppContext';
 import { ArrowLeft, Search, Heart, MessageCircle, Share, MoreHorizontal, ThumbsUp } from 'lucide-react';
 import image1 from '../../../public/6136306495936119394.jpg';
 
-const LinkedInApp: React.FC = () => {
+const ExperienceApp: React.FC = () => {
   const { setCurrentApp } = useApp();
   const [selectedPost, setSelectedPost] = useState<any>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -158,7 +158,7 @@ const LinkedInApp: React.FC = () => {
           <button onClick={handleBack}>
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-lg font-medium">LinkedIn</h1>
+          <h1 className="text-lg font-medium">My Experiences</h1>
         </div>
         <Search className="w-5 h-5" />
       </div>
@@ -169,7 +169,7 @@ const LinkedInApp: React.FC = () => {
           <Search className="absolute left-3 top-2.5 w-4 h-4 text-gray-400" />
           <input
             type="text"
-            placeholder="Search LinkedIn"
+            placeholder="Search Experiences..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -241,4 +241,4 @@ const LinkedInApp: React.FC = () => {
   );
 };
 
-export default LinkedInApp;
+export default ExperienceApp;

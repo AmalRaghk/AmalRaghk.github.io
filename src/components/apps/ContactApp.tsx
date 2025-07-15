@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { ArrowLeft, Search, Menu, Star, Reply, Forward, Trash2, Edit, ExternalLink } from 'lucide-react';
 
-const GmailApp: React.FC = () => {
+const ContactApp: React.FC = () => {
   const { setCurrentApp } = useApp();
   const [selectedEmail, setSelectedEmail] = useState<any>(null);
   const [compose, setCompose] = useState(false);
@@ -22,7 +22,7 @@ const GmailApp: React.FC = () => {
       time: 'Draft',
       read: false,
       starred: false,
-      body: 'Hello!\n\nThank you for visiting my portfolio. This Gmail app is a demonstration of my React development skills.\n\nTo contact me, you have several options:\n\n📧 Email Client: Use the compose feature and click "Send" to open your default email client\n🌐 Gmail Web: Click "Gmail Web" to open Gmail in your browser\n📱 Copy Methods: Use the copy buttons to get my email address or full message\n\nDirect contact: amalraghk123@gmail.com\n\nIf your email client isn\'t configured, don\'t worry! The app provides multiple fallback options including:\n- Opening Gmail in your browser\n- Copying email address to clipboard\n- Copying the full message for manual sending\n\nI look forward to hearing from you!\n\nBest regards,\nAmal Raghk\n\nP.S. This is a demo email showing the app\'s functionality and contact methods. Feel free to explore other features of my portfolio!',
+      body: 'Hello!\n\nThank you for visiting my portfolio. This mail app is a demonstration of my React development skills.\n\nTo contact me, you have several options:\n\n📧 Email Client: Use the compose feature and click "Send" to open your default email client\n🌐 Gmail Web: Click "Gmail Web" to open Gmail in your browser\n📱 Copy Methods: Use the copy buttons to get my email address or full message\n\nDirect contact: amalraghk123@gmail.com\n\nIf your email client isn\'t configured, don\'t worry! The app provides multiple fallback options including:\n- Opening Gmail in your browser\n- Copying email address to clipboard\n- Copying the full message for manual sending\n\nI look forward to hearing from you!\n\nBest regards,\nAmal Raghk\n\nP.S. This is a demo email showing the app\'s functionality and contact methods. Feel free to explore other features of my portfolio!',
       isDraft: true
     }
   ];
@@ -310,7 +310,7 @@ Message: ${composeData.message}
           <button onClick={handleBack} className="p-1">
             <ArrowLeft className="w-6 h-6" />
           </button>
-          <h1 className="text-lg font-medium">Gmail</h1>
+          <h1 className="text-lg font-medium">Mail</h1>
         </div>
         <div className="flex items-center space-x-3">
           <Search className="w-6 h-6" />
@@ -410,4 +410,4 @@ Message: ${composeData.message}
   );
 };
 
-export default GmailApp;
+export default ContactApp;

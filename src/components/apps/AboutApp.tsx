@@ -29,7 +29,7 @@ const Avatar = ({ avatar, username, size = 8, src }: { avatar: string; username:
   </div>
 );
 
-const InstagramApp: React.FC = () => {
+const AboutApp: React.FC = () => {
   const { setCurrentApp } = useApp();
   const [selectedPost, setSelectedPost] = useState<any>(null);
   const [searchTerm, setSearchTerm] = useState('');
@@ -191,7 +191,7 @@ const InstagramApp: React.FC = () => {
           <button onClick={handleBack} className="p-1">
             <ArrowLeft className="w-6 h-6" />
           </button>
-          <h1 className="text-xl font-bold font-serif tracking-tight">Instagram</h1>
+          <h1 className="text-xl font-bold font-serif tracking-tight">About</h1>
         </div>
         <div className="flex items-center space-x-4">
           <Camera className="w-6 h-6 text-gray-700 cursor-pointer" />
@@ -355,4 +355,4 @@ const InstagramApp: React.FC = () => {
   );
 };
 
-export default InstagramApp;
+export default AboutApp;

@@ -1,23 +1,19 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppContext';
-import { Mail, Github, Linkedin, Instagram, Folder, Trash2, Globe, Terminal } from 'lucide-react';
+import { Mail,  Briefcase,CircleUser,  FolderGit } from 'lucide-react';
 
 const MacOSDock: React.FC = () => {
   const { setCurrentApp } = useApp();
 
   const apps = [
-    { name: 'Finder', icon: Folder, id: 'finder', color: 'bg-blue-500' },
-    { name: 'Safari', icon: Globe, id: 'safari', color: 'bg-blue-400' },
-    { name: 'Mail', icon: Mail, id: 'gmail', color: 'bg-blue-600' },
-    { name: 'GitHub', icon: Github, id: 'github', color: 'bg-gray-800' },
-    { name: 'LinkedIn', icon: Linkedin, id: 'linkedin', color: 'bg-blue-700' },
-    { name: 'Instagram', icon: Instagram, id: 'instagram', color: 'bg-pink-500' },
-    { name: 'Terminal', icon: Terminal, id: 'terminal', color: 'bg-gray-700' },
-    { name: 'Trash', icon: Trash2, id: 'trash', color: 'bg-gray-600' },
+    { name: 'Mail', icon: Mail, id: 'contact', color: 'bg-blue-600' },
+    { name: 'Projects', icon: FolderGit, id: 'project', color: 'bg-gray-800' },
+    { name: 'Experiences', icon: Briefcase, id: 'experience', color: 'bg-blue-700' },
+    { name: 'About', icon: CircleUser, id: 'about', color: 'bg-pink-500' },
   ];
 
   const handleAppClick = (appId: string) => {
-    if (['gmail', 'github', 'linkedin', 'instagram'].includes(appId)) {
+    if (['contact', 'project', 'experience', 'about'].includes(appId)) {
       setCurrentApp(appId);
     }
   };

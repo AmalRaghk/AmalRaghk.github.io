@@ -1,27 +1,22 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppContext';
-import { Mail, Github, Linkedin, Instagram, Camera, Settings, Globe, MessageSquare, Phone, Music, Calculator, Clock } from 'lucide-react';
+import { Mail, Briefcase, Instagram, Camera,Music, Calculator, FolderGit } from 'lucide-react';
 
 const IOSHomeScreen: React.FC = () => {
   const { setCurrentApp } = useApp();
 
   const apps = [
-    { name: 'Phone', icon: Phone, color: 'bg-green-500', id: 'phone' },
-    { name: 'Mail', icon: Mail, color: 'bg-blue-500', id: 'gmail' },
-    { name: 'Safari', icon: Globe, color: 'bg-blue-400', id: 'safari' },
+    { name: 'Mail', icon: Mail, color: 'bg-blue-500', id: 'contact' },
     { name: 'Music', icon: Music, color: 'bg-red-500', id: 'music' },
-    { name: 'Messages', icon: MessageSquare, color: 'bg-green-500', id: 'messages' },
-    { name: 'GitHub', icon: Github, color: 'bg-gray-800', id: 'github' },
-    { name: 'LinkedIn', icon: Linkedin, color: 'bg-blue-700', id: 'linkedin' },
-    { name: 'Instagram', icon: Instagram, color: 'bg-pink-500', id: 'instagram' },
+    { name: 'Projects', icon: FolderGit, color: 'bg-gray-800', id: 'project' },
+    { name: 'Experiences', icon: Briefcase, color: 'bg-blue-700', id: 'experience' },
+    { name: 'About', icon: Instagram, color: 'bg-pink-500', id: 'about' },
     { name: 'Camera', icon: Camera, color: 'bg-gray-600', id: 'camera' },
-    { name: 'Settings', icon: Settings, color: 'bg-gray-500', id: 'settings' },
     { name: 'Calculator', icon: Calculator, color: 'bg-gray-800', id: 'calculator' },
-    { name: 'Clock', icon: Clock, color: 'bg-black', id: 'clock' },
   ];
 
   const handleAppClick = (appId: string) => {
-    if (['gmail', 'github', 'linkedin', 'instagram'].includes(appId)) {
+    if (['contact', 'project', 'experience', 'about'].includes(appId)) {
       setCurrentApp(appId);
     }
   };
