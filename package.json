@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://amalraghk.github.io/AmalRaghk/",
+  "homepage": "https://amalraghk.github.io/AmalRaghk.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
